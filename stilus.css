@@ -1,0 +1,48 @@
+background{
+
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+p{
+
+}
+
+nav{
+
+}
+
+nav a{
+
+}
+
+article{
+
+}
+
+img{
+
+}
+
+a{
+    
+}
+
+@media screen and (max-width: 800px){
+    article {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+@media screen and (max-width: 600px){
+    article {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
