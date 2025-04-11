@@ -1,21 +1,30 @@
 background{
-
+ background-color: rgb(208,240,192);
 }
 
 h1{
-
+   text-align: center;
+   font-size: x-large;
+   color:rgb(0,78,56);
+   font-family: Arial;
+   font-weight: bold;
 }
 
 h2{
-
+ font-size: larger;
+ color:rgb(0,78,56);
+ font-family: Arial;
 }
 
 p{
-
+  text-align: justify;
+  font-size:medium;
+  color:rgb(0,78,56);
+  font-family: Arial;
 }
 
 nav{
-
+    
 }
 
 nav a{
@@ -27,21 +36,42 @@ article{
 }
 
 img{
-
+    border-radius: 50%; 
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
 }
 
 a{
-    
+
+}
+
+grid{
+
+}
+
+section{
+ border: 10px solid rgb(107, 155, 107);
+ border-radius: 10%;
+ background-color: rgb(175, 255, 175);
+ margin-top: 10px;
+ padding: 10px;
+}
+
+footer{
+
 }
 
 @media screen and (max-width: 800px){
     article {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
     
 @media screen and (max-width: 600px){
     article {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
