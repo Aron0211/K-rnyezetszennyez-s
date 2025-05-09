@@ -28,7 +28,6 @@ background{
     color:rgb(0,78,56);
     font-family: Arial;
    }
-   
    p{
      text-align: justify;
      font-size:medium;
@@ -43,7 +42,7 @@ background{
     gap: 20px;
     padding: 10px 0;
     background: rgb(186, 238, 193);
-    border-radius: 10px;
+    border-radius: 5px;
     backdrop-filter: blur(5px);
    }
    
@@ -63,37 +62,37 @@ background{
     color: #2c3e50;
     transform: scale(1.1);
    }
-
-   article{
-   
-   }
    
    img{
-       border-radius: 50%; 
+       border-radius: 100%; 
        width: 100px; 
        height: 100px; 
        object-fit: cover;
    }
    
-   a{
-   
-   }
-   
-   
-   
    section{
     display: grid;
     grid-template-columns: 1fr;
-    border: 10px solid rgb(107, 155, 107);
-    border-radius: 10%;
+    border: 3px solid rgb(107, 155, 107);
+    border-radius: 90%;
     background-color: rgb(175, 255, 175);
-    margin-top: 10px;
-    padding: 10px;
+    width: 200px;
+    margin-top: 70px;
+    padding: 40px;
+    justify-content: center;
+    .box {animation: pulse 2s infinite;}
+    @keyframes pulse {
+        0% ,100% {transform: scale(1);}
+        50% {transform: scale(1,2);}
+    }
    }
-   
-   footer{
-   
-   }
+
+   article {
+    display: grid;
+    grid-template-columns: repeat(5, 3fr); 
+    gap: 10px;
+}
+
    
    @media screen and (max-width: 800px){
        article {
