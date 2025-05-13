@@ -2,13 +2,18 @@ background{
     background-color: rgb(208,240,192);
    }
    
+  
+
    h1{
+      
       text-transform: uppercase;
       text-align: center;
-      font-size: x-large;
-      color:rgb(0,78,56);
-      font-family: Arial;
+      font-size: 70px;
       font-weight: bold;
+      background: linear-gradient(to right, rgb(35, 64, 36), rgb(131, 192, 134));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
    }
 
    header {
@@ -73,70 +78,85 @@ background{
    }
    
    section {
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 3px solid rgb(107, 155, 107);
-  border-radius: 0; 
-  background-color: rgb(175, 255, 175);
-  width: 200px;
-   
-  margin-top: 50px;
-  padding: 20px; 
-  justify-content: center;
-}
-
-.box {
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1, 2);
-  }
-}
-
-
-
-   article {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 8px 20px rgba(7, 54, 14, 0.657); 
     display: grid;
-    grid-template-columns: repeat(5, 3fr); 
-    gap: 10px;
-}
+    grid-template-columns: 1fr;
+    border: 3px solid rgb(25, 80, 25);
+    border-radius: 0; 
+    background-color: rgb(175, 255, 175);
+    width: 200px;
+    
+    margin-top: 50px;
+    padding: 20px; 
+    justify-content: center;
+  }
 
-footer {
+  section:hover{
+    background-color: rgb(116, 166, 119);
+    color: #baf4cb;
+    transform: scale(1.1);
 
-  background-color: #f0f4f1;
-  padding: 30px 30px;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-}
+  }
 
-footer p {
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 10px 0;
-}
+  .box {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1, 2);
+    }
+  }
 
 
 
+  article {
+      display: grid;
+      grid-template-columns: repeat(5, 3fr); 
+      gap: 10px;
+  }
 
-   
-   @media screen and (max-width: 800px){
-       article {
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-       }
-   }
-       
-   @media screen and (max-width: 600px){
-       article {
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-       }
-   }
-       
+  footer {
+
+    background-color: #f0f4f1;
+    padding: 30px 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+
+
+  .intro p{
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+
+  }
+
+    
+    @media screen and (max-width: 800px){
+        article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+        
+    @media screen and (max-width: 600px){
+        article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+        
