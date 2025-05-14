@@ -136,7 +136,7 @@ background{
     margin: 10px 0;
   }
 
-
+/*slide show*/
   .intro p{
 
     font-family: Arial, Helvetica, sans-serif;
@@ -144,6 +144,87 @@ background{
 
 
   }
+
+  .slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.fade {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.3s ease;
+  user-select: none;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #4CAF50;
+}
+
 
     
     @media screen and (max-width: 800px){

@@ -67,6 +67,60 @@
           /></a>
         </section>
       </article>
+
+      <div class="slideshow-container">
+
+      <div class="slide fade">
+        <img src="kepek/bundle.jpg" alt="Kép 1">
+      </div>
+
+      <div class="slide fade">
+        <img src="kepek/forest.jpg" alt="Kép 2">
+      </div>
+
+      <div class="slide fade">
+        <img src="kepek/istockphoto.jpg" alt="Kép 3">
+      </div>
+
+      <div class="slide fade">
+        <img src="kepek/kupak.jpg" alt="Kép 4">
+      </div>
+
+       <div class="slide fade">
+        <img src="kepek/plastic.jpg" alt="Kép 5">
+      </div>
+
+      <div class="slide fade">
+        <img src="kepek/glass_bottle.jpg" alt="Kép 6">
+      </div>
+
+      <div class="slide fade">
+        <img src="kepek/water-bottle.jpg" alt="Kép 7">
+      </div>
+
+      <div class="slide fade">
+        <img src="kepek/pollution.jpg" alt="Kép 8">
+      </div>
+     
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+    </div>
+
+    
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span> 
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+
+
+
       <footer>
         <p>
           Ez az oldal a hulladékcsökkentésről szól. A weboldal és a benne
@@ -82,5 +136,36 @@
         <p>&copy; 2025 Magyar Környezetvédelem. Minden jog fenntartva!</p>
       </footer>
     </main>
+          <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      
+      function changeSlide(n) {
+        showSlides(slideIndex += n);
+      }
+
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
   </body>
 </html>
