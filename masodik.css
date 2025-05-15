@@ -131,6 +131,7 @@ footer {
 }
 
 footer p {
+  text-align: center;
   font-size: 16px;
   line-height: 1.6;
   margin: 10px 0;
