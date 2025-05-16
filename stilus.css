@@ -18,7 +18,7 @@ background{
    }
 
    header {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:  Arial, sans-serif;
     background-color: #a3cca5;
     color: white;
     text-align: center;
@@ -43,7 +43,8 @@ background{
    
    nav{
     margin-top: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     gap: 20px;
     padding: 10px 0;
@@ -226,6 +227,23 @@ background{
   background-color: #4CAF50;
 }
 
+
+    @media (max-width: 480px) {
+      article {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+      }
+        
+        nav {
+             
+          grid-template-columns: 1fr;  
+        }
+        a {
+          padding: 15px;
+    }
+
+    
+  }
 
     
     @media screen and (max-width: 800px){
