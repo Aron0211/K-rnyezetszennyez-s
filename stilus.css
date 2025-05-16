@@ -117,7 +117,8 @@ background{
 
 
   article {
-      background-image: url(kepek/erdo.jpg);
+      background-size: cover;
+      background-image: url(kepek/táj.jpg);
       display: grid;
       grid-template-columns: repeat(5, 3fr); 
       gap: 10px;
@@ -125,7 +126,7 @@ background{
 
   footer {
 
-    background-color: #f0f4f1;
+    background-color:  #a6aba8c8;
     padding: 30px 30px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
