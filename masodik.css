@@ -124,7 +124,7 @@ p {
 
 
 footer {
-  background-color: #f0f4f1;
+  background-color: #f0f4f1a6;
   padding: 30px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -137,6 +137,22 @@ footer p {
   line-height: 1.6;
   margin: 10px 0;
 }
+
+@media (max-width: 480px) {
+  article {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+  }
+    
+    nav {
+         
+      grid-template-columns: 1fr;  
+    }
+    a {
+      padding: 15px;
+}
+}
+
 
 
 @media screen and (max-width: 800px) {
