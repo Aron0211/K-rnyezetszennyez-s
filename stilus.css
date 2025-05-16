@@ -2,7 +2,7 @@ background{
     background-color: rgb(208,240,192);
    }
    
-      
+ 
 
 
    h1{
@@ -117,6 +117,7 @@ background{
 
 
   article {
+      background-image: url(kepek/erdo.jpg);
       display: grid;
       grid-template-columns: repeat(5, 3fr); 
       gap: 10px;
@@ -147,7 +148,13 @@ background{
 
   }
 
+  div{
+    background-color:  #7da57d;
+  }
+
+
   .slideshow-container {
+  background-color: #445044;
   max-width: 800px;
   position: relative;
   margin: 30px auto;
@@ -224,7 +231,7 @@ background{
 }
 
 .active, .dot:hover {
-  background-color: #4CAF50;
+  background-color: #a5d6a7;
 }
 
 

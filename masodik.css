@@ -64,10 +64,12 @@ img {
 
 
 article {
+  background-repeat: no-repeat;
+  background-image: url(kepek/forest2.jpg);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  padding: 40px;
+  padding: 150px;
   max-width: 1200px;
   margin: auto;
 }
